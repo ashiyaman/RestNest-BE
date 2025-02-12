@@ -12,7 +12,7 @@ const corsOptions = {
   optionSuccessStatus: 200,
 };
 
-app.use(cors(corsOptions));
+app.use(cors(corsOptions));    
 
 app.use(express.json())
 initializeDatabase()
@@ -53,7 +53,7 @@ app.get('/', (req, res) => {
     }
 }
 
-createHotel(newHotel)
+//createHotel(newHotel)
 
 app.post('/hotels', async (req, res) => {
     try{

@@ -1,13 +1,13 @@
 const mongoose = require("mongoose")
-const Hotels = require("./models/Hotels.models")
+const Hotels = require("./models/hotels.models")
 const express = require('express')
-
+const cors = require("cors");
 const {initializeDatabase} = require("./db/db.connect")
 const app = express()
 
 app.use(cors());
 app.use(express.json());
-const cors = require("cors");
+
 const corsOptions = {
   origin: "*",
   credentials: true,

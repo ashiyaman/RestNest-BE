@@ -5,6 +5,8 @@ const express = require('express')
 const {initializeDatabase} = require("./db/db.connect")
 const app = express()
 
+app.use(cors());
+app.use(express.json());
 const cors = require("cors");
 const corsOptions = {
   origin: "*",

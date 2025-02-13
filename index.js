@@ -65,10 +65,6 @@ app.post('/hotels', async (req, res) => {
     }
 })
 
-app.get('/', (req, res) => {
-    res.send('Welcome to Hotel Server.')
-})
-
 //Get all the hotels from database
 
 const readAllHotels = async() => {
